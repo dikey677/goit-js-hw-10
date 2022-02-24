@@ -33,7 +33,7 @@ function onInputCountry(e) {
         removeMarkupCountry(response);
       }
 
-      if (response.length > 1 && response.length < 10) {
+      if (response.length > 1 && response.length <= 10) {
         // Если бэкенд вернул от 2-х до 10-х стран, под тестовым полем отображается список найденных стран.
         // Каждый элемент списка состоит из флага и имени страны.
         renderAnyCountries(response);
